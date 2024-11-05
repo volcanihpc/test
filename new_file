@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+    - name: Create an empty file named 'test' in the /tmp directory
+      ansible.builtin.file:
+        path: "/tmp/test"
+        state: touch
